@@ -35,8 +35,8 @@ const options = {
   key: fs.readFileSync(__dirname + '/resource/private.key'),
   issuer: argv.idpId,
   lifetimeInSeconds: 600,
-  audiences: 'cubetree.com', //as obtained from SAP Jam docs 
-  recipient: argv.baseUrl + '/api/v1/auth/token',
+  audiences: 'cubetree.com', //as obtained from SAP Jam docs https://help.sap.com/viewer/u_collaboration_dev_help/fd49d6ed74ab4e54825a843dc20dd63f.html
+  recipient: argv.baseUrl + '/api/v1/auth/token', //since token endpoint is the one who is supposed to receive the assertion later on
   attributes: {
     'client_id': argv.clientKey,
   },
