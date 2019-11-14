@@ -46,6 +46,8 @@ const options = {
   digestAlgorithm: 'sha1',
 };
 
+// TODO: how to add NameQualifier into options for SuccessFactors IDP? node-saml library doesn't support NameQualifier at all!
+
 // create the saml assertion based on given input, and sign it with the idp private key
 const signedAssertion = '<?xml version="1.0" encoding="UTF-8"?>\n' + saml20.create(options);
 console.log("saml assertion generated: " + signedAssertion);
