@@ -14,5 +14,5 @@ node-saml is most important dependency.
 - baseUrl: The base url of the Jam site
 - clientKey: Jam OAuth client key
 - idpId: Identifier for the SAML trusted IDP
-- subjectNameIdFormat: "email" or "unspecified"
+- subjectNameIdFormat: "email" or "unspecified". The "unspecified" is ONLY used for SuccessFactors IDP
 - subjectNameId: The identifier for the user. Can be an email address or a unique identifier, depending on the subjectNameIdFormat
