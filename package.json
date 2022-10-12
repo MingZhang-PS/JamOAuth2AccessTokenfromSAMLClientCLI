@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.0",
-    "saml": "^0.13.0",
+    "saml": "^3.0.1",
     "yargs": "^14.2.0"
   }
 }
